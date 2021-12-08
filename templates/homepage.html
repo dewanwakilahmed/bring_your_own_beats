@@ -12,7 +12,56 @@
     <title>BRING YOUR OWN BEATS</title>
   </head>
   <body>
-    <h1>Bring Your Own Beats</h1>
-    <h2>Homepage</h2>
+    <div class="homepage-container">
+      <h1 class="homepage-title">Bring Your Own Beats</h1>
+      <div class="actions">
+        <div class="rules">
+          <button class="rules-btn">Rules</button>
+        </div>
+        <div class="connect-wallet">
+          <button class="connect-wallet-btn">Connect Wallet</button>
+          <p>Connect your wallet to start a BATTLE!</p>
+        </div>
+      </div>
+      <div class="tournaments">
+        <h2 class="tournaments-title">Producer Buy In Tournament</h2>
+        <div class="available-tournaments">
+          <div class="one-vs-one">
+            <span class="one-vs-one-status">
+              OPEN
+              <img
+                src="{% static 'homepage/asset/icon/open-status.ico' %}"
+                alt="one-vs-one-is-open"
+                class="one-vs-one-open-status"
+              />
+            </span>
+            1 vs 1
+          </div>
+          <div class="four-producer-tour">
+            <span class="four-producer-tour-status">
+              OPEN
+              <img
+                src="{% static 'homepage/asset/icon/open-status.ico' %}"
+                alt="four-producer-tour-is-open"
+                class="four-producer-tour-open-status"
+              />
+            </span>
+            4 Producer Tour
+          </div>
+          <div class="eight-producer-tour">
+            <span class="eight-producer-tour-status">
+              OPEN
+              <img
+                src="{% static 'homepage/asset/icon/open-status.ico' %}"
+                alt="eight-producer-tour-is-open"
+                class="eight-producer-tour-open-status"
+              />
+            </span>
+            8 Producer Tour
+          </div>
+        </div>
+        <button class="buy-in-btn">Buy In</button>
+      </div>
+    </div>
   </body>
 </html>

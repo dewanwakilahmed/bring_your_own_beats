@@ -1,3 +1,116 @@
-h1 {
-  color: green;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Patrick+Hand&family=Shadows+Into+Light&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-container {
+  /* background-color: purple; */
+}
+
+.homepage-title {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.actions {
+  /* background-color: grey; */
+  font-family: "Nanum Myeongjo", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.rules-btn,
+.connect-wallet-btn,
+.buy-in-btn {
+  background-color: #1c8a43;
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+}
+
+.rules-btn {
+  padding: 20px 25px;
+}
+
+.connect-wallet {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.connect-wallet-btn {
+  padding: 20px 25px;
+}
+
+.tournaments-title {
+  font-family: "Shadows Into Light", cursive;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.available-tournaments {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.one-vs-one,
+.four-producer-tour,
+.eight-producer-tour {
+  background-color: #1b1b1b;
+  font-family: "Patrick Hand", cursive;
+  font-size: 25px;
+  white-space: nowrap;
+  width: 225px;
+  padding: 20px;
+  position: relative;
+}
+
+.one-vs-one-status,
+.four-producer-tour-status,
+.eight-producer-tour-status {
+  color: #1c8a43;
+  font-size: 12.5px;
+  padding: 2px 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.one-vs-one-open-status,
+.four-producer-tour-open-status,
+.eight-producer-tour-open-status {
+  width: 10px;
+  height: 10px;
+}
+
+.buy-in-btn {
+  padding: 25px 35px;
+  text-transform: uppercase;
 }
