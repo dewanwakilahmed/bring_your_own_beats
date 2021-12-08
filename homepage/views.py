@@ -9,3 +9,7 @@ def homepage(request):
 
 def buy_in(request):
     return render(request, 'buy_in.html')
+
+
+def one_vs_one_buy_in(request):
+    return render(request, '1_v_1_buy_in.html')

@@ -26,7 +26,6 @@ body {
 }
 
 .actions {
-  /* background-color: grey; */
   font-family: "Nanum Myeongjo", serif;
   display: flex;
   justify-content: space-between;
@@ -44,6 +43,7 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .rules-btn {
@@ -57,7 +57,7 @@ body {
 }
 
 .connect-wallet-btn {
-  padding: 20px 25px;
+  padding: 15px 20px;
 }
 
 .tournaments-title {
@@ -107,6 +107,6 @@ body {
 }
 
 .buy-in-btn {
-  padding: 25px 35px;
+  padding: 25px 30px;
   text-transform: uppercase;
 }
