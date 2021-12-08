@@ -7,3 +7,40 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: black;
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-in-container {
+  display: flex;
+  gap: 25px;
+}
+
+.one-vs-one-buy-in-title,
+.four-producer-tour-buy-in-title,
+.eight-producer-tour-buy-in-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.one-vs-one-buy-in-price,
+.four-producer-tour-buy-in-price,
+.eight-producer-tour-buy-in-price {
+  display: flex;
+  gap: 7.5px;
+  align-items: center;
+}
+
+.avax-coin-icon {
+  width: 20px;
+  height: 20px;
+}
