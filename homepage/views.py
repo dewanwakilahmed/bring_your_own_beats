@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def homepage(request):
     return render(request, 'homepage.html')
+
+
+def buy_in(request):
+    return render(request, 'buy_in.html')
