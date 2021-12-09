@@ -18,21 +18,32 @@ body {
   align-items: center;
 }
 
-.one-vs-one-buy-in-container {
+.submit-music-container {
   display: flex;
   gap: 35px;
 }
 
-.prize-money-big {
+.round-one-img {
   width: 500px;
   height: 500px;
 }
 
-.one-vs-one-buy-in-form-title {
-  font-size: 36px;
+.submit-music-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.one-vs-one-buy-in-price {
+.submit-music-form-title {
+  font-size: 30px;
+}
+
+.round-one-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.submit-music-price {
   display: flex;
   gap: 7.5px;
   align-items: center;
@@ -53,14 +64,11 @@ body {
   margin-bottom: 25px;
 }
 
-.one-vs-one-buy-in-quantity-input {
-  font-size: 32px;
-  height: 50px;
-  width: 75px;
+.music-track-input {
   margin-top: 10px;
 }
 
-.purchase-ticket-btn {
+.submit-music-btn {
   /* background-color: #7fccf6; */
   background-color: #1c8a43;
   color: white;

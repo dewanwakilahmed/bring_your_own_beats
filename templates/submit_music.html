@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{% static 'homepage/css/submit_music.style.css' %}"
+    />
+    <title>BRING YOUR OWN BEATS</title>
+  </head>
+  <body>
+    <div class="submit-music-container">
+      <div class="round-one-img-container">
+        <img
+          src="{% static 'homepage/asset/image/round-1.jpg' %}"
+          alt="round-one-img"
+          class="round-one-img"
+        />
+      </div>
+      <div class="submit-music-form">
+        <div class="submit-music-form-header">
+          <p class="submit-music-form-title">1 vs 1 Buy In</p>
+          <p class="round-one-title">Round 1</p>
+        </div>
+        <div class="submit-music-price">
+          <img
+            src="{% static 'homepage/asset/icon/avax-coin.svg' %}"
+            class="avax-coin-icon"
+            alt="avax-coin"
+          />
+          <span>0.058746 AVAX</span>
+        </div>
+        <form action="" method="">
+          <p class="producer-name-title">Producer Name</p>
+          <input type="text" name="producer_name" class="producer-name-input" />
+          <p class="music-track-title">Music Track</p>
+          <input type="file" name="music_track" class="music-track-input" />
+          <br />
+          <input type="submit" value="SUBMIT MUSIC" class="submit-music-btn" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
