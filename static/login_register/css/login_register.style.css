@@ -1,7 +1,59 @@
-h1 {
-  color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Patrick+Hand&family=Shadows+Into+Light&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  color: grey;
+body {
+  background: black;
+  color: white;
+  /* font-family: "Nanum Myeongjo", serif; */
+  font-family: "Patrick Hand", cursive;
+  font-size: 36px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-title {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.email-input,
+.password-input {
+  font-size: 28px;
+  height: 50px;
+  width: 425px;
+}
+
+.actions {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn,
+.register-btn {
+  background-color: #1c8a43;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 15px 20px;
+  margin-top: 25px;
 }
