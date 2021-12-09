@@ -13,7 +13,40 @@
   </head>
   <body>
     <div class="one-vs-one-buy-in-container">
-      <h1>1 vs 1 Buy In</h1>
+      <div class="prize-money-img">
+        <img
+          src="{% static 'homepage/asset/image/prize-money-big.jpg' %}"
+          alt="one-vs-one-prize-money"
+          class="prize-money-big"
+        />
+      </div>
+      <div class="one-vs-one-buy-in-form">
+        <p class="one-vs-one-buy-in-form-title">1 vs 1 Buy In</p>
+        <div class="one-vs-one-buy-in-price">
+          <img
+            src="{% static 'homepage/asset/icon/avax-coin.svg' %}"
+            class="avax-coin-icon"
+            alt="avax-coin"
+          />
+          <span>0.058746 AVAX</span>
+        </div>
+        <form action="" method="">
+          <p class="producer-name-title">Producer Name</p>
+          <input type="text" name="producer_name" class="producer-name-input" />
+          <p class="quantity-title">Quantity</p>
+          <input
+            type="number"
+            name="one_vs_one_buy_in_quantity"
+            class="one-vs-one-buy-in-quantity-input"
+          />
+          <br />
+          <input
+            type="submit"
+            value="PURCHASE TICKET"
+            class="purchase-ticket-btn"
+          />
+        </form>
+      </div>
     </div>
   </body>
 </html>
