@@ -17,3 +17,7 @@ def one_vs_one_buy_in(request):
 
 def four_tour_producer_chart(request):
     return render(request, '4_tour_producer_chart.html')
+
+
+def eight_tour_producer_chart(request):
+    return render(request, '8_tour_producer_chart.html')
