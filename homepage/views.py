@@ -1,10 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.models import auth
+from login_register.views import login_register
+from django.contrib import messages
 
 # Create your views here.
 
 
 def homepage(request):
     return render(request, 'homepage.html')
+
+
+def logout(request):
+    auth.logout(request)
+    messages.info(request, 'Logged Out Successfully!')
+    return login_register(request)
 
 
 def buy_in(request):

@@ -18,6 +18,11 @@ body {
   align-items: center;
 }
 
+.not-logged-in {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 75px;
+}
+
 .homepage-title {
   font-family: "Shadows Into Light", cursive;
   font-size: 75px;
@@ -33,7 +38,7 @@ body {
   margin-bottom: 25px;
 }
 
-.rules-btn,
+.logout-btn,
 .connect-wallet-btn,
 .buy-in-btn {
   background-color: #1c8a43;
@@ -46,8 +51,20 @@ body {
   cursor: pointer;
 }
 
-.rules-btn {
+.logout-btn:hover,
+.connect-wallet-btn:hover,
+.buy-in-btn:hover {
+  background-color: #13a345;
+  transform: scale(1.05);
+}
+
+.logout-btn {
   padding: 20px 25px;
+}
+
+.logout-link {
+  text-decoration: none;
+  color: white;
 }
 
 .connect-wallet {

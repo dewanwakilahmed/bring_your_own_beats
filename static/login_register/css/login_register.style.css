@@ -60,6 +60,13 @@ body {
   border: none;
   padding: 15px 20px;
   margin-top: 25px;
+  cursor: pointer;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+  background-color: #13a345;
+  transform: scale(1.05);
 }
 
 /* .eror-message {

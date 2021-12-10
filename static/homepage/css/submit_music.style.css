@@ -78,3 +78,8 @@ body {
   padding: 15px 20px;
   margin-top: 50px;
 }
+
+.submit-music-btn:hover {
+  background-color: #13a345;
+  transform: scale(1.05);
+}

@@ -13,10 +13,13 @@
   </head>
   <body>
     <div class="homepage-container">
+      {% if user.is_authenticated %}
       <h1 class="homepage-title">Bring Your Own Beats</h1>
       <div class="actions">
         <div class="rules">
-          <button class="rules-btn">Rules</button>
+          <button class="logout-btn">
+            <a href="logout" class="logout-link">LOGOUT</a>
+          </button>
         </div>
         <div class="connect-wallet">
           <button class="connect-wallet-btn">Connect Wallet</button>
@@ -62,6 +65,9 @@
         </div>
         <!-- <button class="buy-in-btn">Buy In</button> -->
       </div>
+      {% else %}
+      <div class="not-logged-in">PLEASE LOGIN/REGISTER</div>
+      {% endif %}
     </div>
   </body>
 </html>

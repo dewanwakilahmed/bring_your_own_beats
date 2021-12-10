@@ -16,16 +16,22 @@ def login_register(request):
                 return redirect('/homepage')
             else:
                 messages.info(request, 'Invalid Credentials!')
-            return redirect('/')
-        elif 'register' in request.POST:
-            if User.objects.filter(username=username).exists():
-                messages.info(request, 'Username Already Taken!')
+                return redirect('/')
+        elif ('register' in request.POST):
+            if username == '' or password == '':
+                messages.error(
+                    request, 'Please provide both username and password')
                 return redirect('/')
             else:
-                user = User.objects.create_user(
-                    username=username, password=password)
-                user.save()
-                messages.info(request, 'Account Registered! Please Login Now')
-            return redirect('/')
+                if User.objects.filter(username=username).exists():
+                    messages.info(request, 'Username Already Taken!')
+                    return redirect('/')
+                else:
+                    user = User.objects.create_user(
+                        username=username, password=password)
+                    user.save()
+                    messages.info(
+                        request, 'Account Registered! Please Login Now')
+                    return redirect('/')
     else:
         return render(request, 'login_register.html')
