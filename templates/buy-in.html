@@ -7,28 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="{% static 'homepage/css/1_v_1_buy_in.style.css' %}"
+      href="{% static 'homepage/css/buy-in.style.css' %}"
     />
     <title>BRING YOUR OWN BEATS</title>
   </head>
   <body>
-    <div class="one-vs-one-buy-in-container">
+    <div class="buy-in-container">
       <div class="prize-money-img">
         <img
           src="{% static 'homepage/asset/image/prize-money-big.jpg' %}"
-          alt="one-vs-one-prize-money"
+          alt="prize-money"
           class="prize-money-big"
         />
       </div>
-      <div class="one-vs-one-buy-in-form">
-        <p class="one-vs-one-buy-in-form-title">1 vs 1 Buy In</p>
-        <div class="one-vs-one-buy-in-price">
+      <div class="buy-in-form">
+        <p class="buy-in-form-title">{{ buy_in_type }}</p>
+        <div class="buy-in-price">
           <img
             src="{% static 'homepage/asset/icon/avax-coin.svg' %}"
             class="avax-coin-icon"
             alt="avax-coin"
           />
-          <span>0.058746 AVAX</span>
+          <span>{{ buy_in_price }} AVAX</span>
         </div>
         <form action="purchase-ticket" method="POST">
           {% csrf_token %}
@@ -37,8 +37,8 @@
           <p class="quantity-title">Quantity</p>
           <input
             type="number"
-            name="one_vs_one_buy_in_quantity"
-            class="one-vs-one-buy-in-quantity-input"
+            name="buy_in_quantity"
+            class="buy-in-quantity-input"
           />
           <br />
           <input

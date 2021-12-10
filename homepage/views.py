@@ -17,7 +17,16 @@ def logout(request):
 
 
 def buy_in(request):
-    return render(request, 'buy_in.html')
+    one_v_one_price = 1.2548
+    four_producer_price = 4.2548
+    eight_producer_price = 8.2548
+    if request.method == 'POST':
+        if 'one_vs_one' in request.POST:
+            return render(request, 'buy-in.html', {'buy_in_type': '1 vs 1', 'buy_in_price': one_v_one_price})
+        elif 'four_producer' in request.POST:
+            return render(request, 'buy-in.html', {'buy_in_type': '4 Tour Producer', 'buy_in_price': four_producer_price})
+        elif 'eight_producer' in request.POST:
+            return render(request, 'buy-in.html', {'buy_in_type': '8 Tour Producer', 'buy_in_price': eight_producer_price})
 
 
 def one_vs_one_buy_in(request):

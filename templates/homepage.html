@@ -21,18 +21,16 @@
             <a href="logout" class="logout-link">Logout</a>
           </button>
         </div>
-        <a href="buy-in" class="buy-in">
-          <button class="buy-in-btn">BUY IN</button>
-        </a>
         <div class="connect-wallet">
           <button class="connect-wallet-btn">Connect Wallet</button>
           <p>Connect your wallet to start a BATTLE!</p>
         </div>
       </div>
-      <div class="tournaments">
+      <form action="buy-in" method="POST" class="tournaments">
+        {% csrf_token %}
         <h2 class="tournaments-title">Producer Buy In Tournament</h2>
         <div class="available-tournaments">
-          <div class="one-vs-one">
+          <a href="buy-in" class="one-vs-one">
             <span class="one-vs-one-status">
               OPEN
               <img
@@ -41,9 +39,14 @@
                 class="one-vs-one-open-status"
               />
             </span>
-            1 vs 1
-          </div>
-          <div class="four-producer-tour">
+            <input
+              type="submit"
+              name="one_vs_one"
+              value="1 vs 1"
+              class="one-vs-one-btn"
+            />
+          </a>
+          <a href="buy-in" class="four-producer-tour">
             <span class="four-producer-tour-status">
               OPEN
               <img
@@ -52,9 +55,14 @@
                 class="four-producer-tour-open-status"
               />
             </span>
-            4 Producer Tour
-          </div>
-          <div class="eight-producer-tour">
+            <input
+              type="submit"
+              name="four_producer"
+              value="4 Producer Tour"
+              class="four-producer-btn"
+            />
+          </a>
+          <a href="buy-in" class="eight-producer-tour">
             <span class="eight-producer-tour-status">
               OPEN
               <img
@@ -63,10 +71,15 @@
                 class="eight-producer-tour-open-status"
               />
             </span>
-            8 Producer Tour
-          </div>
+            <input
+              type="submit"
+              name="eight_producer"
+              value="8 Producer Tour"
+              class="eight-producer-btn"
+            />
+          </a>
         </div>
-      </div>
+      </form>
       {% else %}
       <div class="not-logged-in">PLEASE LOGIN/REGISTER</div>
       {% endif %}
