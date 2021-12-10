@@ -14,15 +14,37 @@
   <body>
     <div class="login-register-container">
       <h1 class="app-title">Bring Your Own Beats</h1>
-      <form action="" method="">
-        <p class="email-title">Email</p>
-        <input type="email" class="email-input" />
+      <form action="" method="POST" class="login-register-form">
+        {% csrf_token %}
+        <p class="username-title">Username</p>
+        <input type="text" name="username" class="username-input" />
         <p class="password-title">Password</p>
-        <input type="password" class="password-input" /> <br />
+        <input type="password" name="password" class="password-input" /> <br />
         <div class="actions">
-          <input type="submit" value="LOGIN" class="login-btn" />
-          <input type="submit" value="REGISTER" class="register-btn" />
+          <input type="submit" name="login" value="LOGIN" class="login-btn" />
+          <input
+            type="submit"
+            name="register"
+            value="REGISTER"
+            class="register-btn"
+          />
         </div>
+        {% for message in messages %}
+        <p
+          class="error-message"
+          style="
+            position: absolute;
+            width: 425px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            white-space: nowrap;
+          "
+        >
+          {{message}}
+        </p>
+        {% endfor %}
       </form>
     </div>
   </body>
