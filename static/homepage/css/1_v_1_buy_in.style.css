@@ -69,6 +69,7 @@ body {
   border: none;
   padding: 15px 20px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .purchase-ticket-btn:hover {

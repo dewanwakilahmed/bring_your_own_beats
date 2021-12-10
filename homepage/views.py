@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.contrib.auth.models import auth
 from login_register.views import login_register
 from django.contrib import messages
